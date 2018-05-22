@@ -1,0 +1,56 @@
+{
+  "name": "ts-module-seed",
+  "description": "",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "*",
+    "@types/mocha": "*",
+    "@types/node": "*",
+    "chai": "*",
+    "coveralls": "*",
+    "mocha": "*",
+    "nyc": "*",
+    "source-map-support": "*",
+    "ts-node": "*",
+    "typescript": "*"
+  },
+  "nyc": {
+    "include": [
+      "**/*.ts"
+    ],
+    "exclude": [
+      "**/*.spec.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html",
+      "lcov"
+    ],
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "sourceMap": true,
+    "instrument": true
+  },
+  "scripts": {
+    "fix": "tslint --fix --project ./tsconfig.json",
+    "build": "npm test && tsc",
+    "stop": "killall -KILL node",
+    "test": "nyc mocha"
+  }
+}
