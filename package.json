@@ -7,7 +7,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "super-injector": "^0.1.1"
+  },
   "devDependencies": {
     "@types/chai": "*",
     "@types/mocha": "*",

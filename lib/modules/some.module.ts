@@ -6,6 +6,12 @@
  * new SomeModule().message or
  * SomeModuleInst.message
  */
+import { Injectable, Injector } from 'super-injector';
+import { SomeService } from './services/some.service';
+/**
+ * Class Declaration
+ */
+@Injectable() // <-- injects dependencies, add dependencies to constructor
 export class SomeModule {
 
     /**
@@ -13,7 +19,11 @@ export class SomeModule {
      * Usage:
      * this.messageTest
      */
-    private messageText: string = 'hello';
+    private messageText: string = '';
+
+    constructor(private someService: SomeService) {
+        this.messageText = this.someService.message;
+    }
 
     /**
      * @function message (get)
@@ -30,4 +40,4 @@ export class SomeModule {
     }
 }
 
-export const SomeModuleInst: SomeModule = new SomeModule();
+export const SomeModuleInst: SomeModule = Injector.resolve(SomeModule);
