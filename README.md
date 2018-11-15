@@ -2,7 +2,7 @@
 
 # Typescript Module Seed
 
-One Paragraph of project description goes here
+One Paragraph of project description goes here.
 
 ## Getting Started
 
@@ -10,9 +10,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+A step by step series of examples that tell you have to get a development environment running.
 
-Say what the step will be
+Say what the step will be:
 
 ```
 npm i project-name --save

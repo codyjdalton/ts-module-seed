@@ -17,7 +17,7 @@ export class SomeModule {
     /**
      * @property {string} messageText - example text
      * Usage:
-     * this.messageTest
+     * this.messageText
      */
     private messageText: string = '';
 
@@ -27,6 +27,7 @@ export class SomeModule {
 
     /**
      * @function message (get)
+     * @return {string} - the message
      */
     get message(): string {
         return this.messageText;
@@ -34,6 +35,7 @@ export class SomeModule {
 
     /**
      * @function message (set)
+     * @return {void} - set the message
      */
     set message(val: string) {
         this.messageText = val;
