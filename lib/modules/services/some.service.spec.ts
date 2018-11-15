@@ -1,5 +1,5 @@
 /**
- * some.service
+ * some.service.spec
  */
 import { expect } from 'chai';
 import { Injector } from 'super-injector';
