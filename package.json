@@ -1,7 +1,7 @@
 {
   "name": "ts-module-seed",
   "description": "",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [],
